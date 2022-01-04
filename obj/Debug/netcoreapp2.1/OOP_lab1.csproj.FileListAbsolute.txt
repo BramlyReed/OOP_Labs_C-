@@ -9,3 +9,14 @@ C:\Users\yaand\source\repos\OOP_lab1\obj\Debug\netcoreapp2.1\OOP_lab1.AssemblyIn
 C:\Users\yaand\source\repos\OOP_lab1\obj\Debug\netcoreapp2.1\OOP_lab1.AssemblyInfo.cs
 C:\Users\yaand\source\repos\OOP_lab1\obj\Debug\netcoreapp2.1\OOP_lab1.dll
 C:\Users\yaand\source\repos\OOP_lab1\obj\Debug\netcoreapp2.1\OOP_lab1.pdb
+C:\Users\yaand\Desktop\УНИК 5-100\5 курс\ООТ\OOP_Labs_C-\OOP_lab1\bin\Debug\netcoreapp2.1\OOP_lab1.deps.json
+C:\Users\yaand\Desktop\УНИК 5-100\5 курс\ООТ\OOP_Labs_C-\OOP_lab1\bin\Debug\netcoreapp2.1\OOP_lab1.runtimeconfig.json
+C:\Users\yaand\Desktop\УНИК 5-100\5 курс\ООТ\OOP_Labs_C-\OOP_lab1\bin\Debug\netcoreapp2.1\OOP_lab1.runtimeconfig.dev.json
+C:\Users\yaand\Desktop\УНИК 5-100\5 курс\ООТ\OOP_Labs_C-\OOP_lab1\bin\Debug\netcoreapp2.1\OOP_lab1.dll
+C:\Users\yaand\Desktop\УНИК 5-100\5 курс\ООТ\OOP_Labs_C-\OOP_lab1\bin\Debug\netcoreapp2.1\OOP_lab1.pdb
+C:\Users\yaand\Desktop\УНИК 5-100\5 курс\ООТ\OOP_Labs_C-\OOP_lab1\obj\Debug\netcoreapp2.1\OOP_lab1.csprojAssemblyReference.cache
+C:\Users\yaand\Desktop\УНИК 5-100\5 курс\ООТ\OOP_Labs_C-\OOP_lab1\obj\Debug\netcoreapp2.1\OOP_lab1.csproj.CoreCompileInputs.cache
+C:\Users\yaand\Desktop\УНИК 5-100\5 курс\ООТ\OOP_Labs_C-\OOP_lab1\obj\Debug\netcoreapp2.1\OOP_lab1.AssemblyInfoInputs.cache
+C:\Users\yaand\Desktop\УНИК 5-100\5 курс\ООТ\OOP_Labs_C-\OOP_lab1\obj\Debug\netcoreapp2.1\OOP_lab1.AssemblyInfo.cs
+C:\Users\yaand\Desktop\УНИК 5-100\5 курс\ООТ\OOP_Labs_C-\OOP_lab1\obj\Debug\netcoreapp2.1\OOP_lab1.dll
+C:\Users\yaand\Desktop\УНИК 5-100\5 курс\ООТ\OOP_Labs_C-\OOP_lab1\obj\Debug\netcoreapp2.1\OOP_lab1.pdb

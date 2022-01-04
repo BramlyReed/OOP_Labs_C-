@@ -51,6 +51,8 @@ namespace HomeWorkOOP1
 			motherBrotherSon1.PrintCousins();
 			motherBrotherSon1.PrintInLaws();
 
+			me.AddChild(father);
+			me.SetMarriedValue(father);
 		}
 	}
 }
