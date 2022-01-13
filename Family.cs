@@ -8,11 +8,11 @@ namespace OOP_lab1
 
 	class Person
 	{
-		private string name;
+		public string name;
 		private Sex sex;
 		private Person dad;
 		private Person mom;
-		private Person partner;
+		public Person partner;
 		private List<Person> child;
 
 		public Person(string name, Sex sex)
@@ -23,8 +23,16 @@ namespace OOP_lab1
 
 		public void SetMarriedValue(Person m_partner)
 		{
-			if (CheckThatPersonValid(m_partner))
+			if (CheckPersonNotNull(m_partner))
 			{
+				if (CheckPersonNotNull(m_partner.partner))
+				{
+					m_partner.partner.partner = null;
+				}
+				if (CheckPersonNotNull(partner))
+				{
+					partner.partner = null;
+				}
 				partner = m_partner;
 				m_partner.partner = this;
 			}
@@ -57,64 +65,16 @@ namespace OOP_lab1
 			Console.WriteLine($"По данному запросу - {message} - ничего не было найдено.");
 		}
 
-		private Boolean CheckThatPersonValid(Person person)
-		{
-			if (person == this)
-			{
-				return false;
-			}
-			List<Person> people = new List<Person>();
-			List<Person> upTree = GetUpTree(this);
-			List<Person> downTree = GetDownTree(this);
-			people.AddRange(upTree);
-			people.AddRange(downTree);
-			if (people.Contains(person))
-			{
-				return false;
-			}
-			return true;
-		}
-
-		private List<Person> GetUpTree(Person person)
-		{
-			List<Person> people = new List<Person>();
-			List<Person> brothers = GetSiblings(person, Sex.male);
-			if (CheckThatArrayExist(brothers)) { people.AddRange(brothers); }
-			List<Person> sisters = GetSiblings(person, Sex.female);
-			if (CheckThatArrayExist(sisters)) { people.AddRange(sisters); }
-			if (CheckPersonNotNull(person.dad))
-			{
-				people.Add(person.dad);
-				people.AddRange(GetUpTree(person.dad));
-			}
-			if (CheckPersonNotNull(person.mom))
-			{
-				people.Add(person.mom);
-				people.AddRange(GetUpTree(person.mom));
-			}
-			return people;
-
-		}
-
-		private List<Person> GetDownTree(Person person)
-		{
-			List<Person> people = new List<Person>();
-			if (CheckThatArrayExist(person.child)) {
-				foreach (Person child in person.child)
-				{
-					people.Add(child);
-					if (CheckThatArrayExist(child.child))
-					{
-						people.AddRange(GetDownTree(child));
-					}
-				}
-			}
-			return people;
-		}
-
 		private void SetChild(Person child)
 		{
-			if (this.child != null)
+			if (CheckThatArrayExist(child.child))
+			{
+				if (child.child.Contains(this))
+				{
+					child.child.RemoveAt(child.child.IndexOf(this));
+				}
+			}
+			if (CheckThatArrayExist(this.child))
 			{
 				this.child.Add(child);
 			}
@@ -128,7 +88,7 @@ namespace OOP_lab1
 
 		public void AddChild(Person child)
 		{
-			if (CheckThatPersonValid(child)){
+			if (CheckPersonNotNull(child)){
 				SetChild(child);
 				if (CheckPersonNotNull(partner))
 				{
