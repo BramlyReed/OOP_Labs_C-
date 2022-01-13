@@ -8,11 +8,11 @@ namespace OOP_lab1
 
 	class Person
 	{
-		public string name;
+		private string name;
 		private Sex sex;
 		private Person dad;
 		private Person mom;
-		public Person partner;
+		private Person partner;
 		private List<Person> child;
 
 		public Person(string name, Sex sex)
